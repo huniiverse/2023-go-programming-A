@@ -26,9 +26,15 @@ func main() {
 	// for j := 0; j < len(primes); j++ {
 	// 	fmt.Println(primes[j])
 	// }
+
 	fmt.Println()
-	for prime := range primes { // 값만 출력하려 했으나 인덱스가 출력됨
+	//for prime := range primes { // 값만 출력하려 했으나 인덱스가 출력됨
+	// for idx, prime := range primes { // 컴파일에러, idx 사용해야 함
+	for _, prime := range primes {
 		fmt.Println(prime)
 	}
-
+	fmt.Printf("%#v\n", test) // 리터럴 값 자체를 출력
+	fmt.Println(test)
+	fmt.Printf("%#v\n", primes)
+	fmt.Println(primes)
 }
