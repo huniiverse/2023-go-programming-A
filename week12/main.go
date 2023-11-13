@@ -9,7 +9,11 @@ func main() {
 	a[3] = "d"
 	as := a[:2]
 	as[1] = "z"
+	//c := append(a, "y")
+	c := append(a, "y", "x")
+
 	fmt.Println(a, len(a), cap(a))
+	fmt.Println(c, len(c), cap(c))
 }
 
 // func main() {
